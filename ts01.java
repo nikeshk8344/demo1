@@ -3,6 +3,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+//demo linkdin login using chrome driver
+//we need to download chrome driver before working with it
+//we need to set and copy the path of chrome driver
+
 public class ts01 {
     public static void main(String[] args) {
 
@@ -20,7 +24,9 @@ public class ts01 {
         password.isEnabled();
         password.sendKeys("Jnainkue");
         driver.findElement(By.xpath("//button[normalize-space()='Sign in']")).click();
-
+        
+      /* used to close the browser, keeping in qutations if needed use it
+        driver.quit(); */
 
     }
 }
